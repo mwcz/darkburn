@@ -77,7 +77,7 @@ let g:colors_name="darkburn"
 
 hi Boolean         guifg=#dca3a3
 hi Character       guifg=#dca3a3 gui=bold
-hi Comment         guifg=#7f9f7f gui=italic
+hi Comment         guifg=#7f8f7f gui=italic
 hi Conditional     guifg=#f0dfaf gui=bold
 hi Constant        guifg=#ffcfaf gui=bold
 hi Cursor          guifg=#000d18 guibg=#8faf9f gui=bold
