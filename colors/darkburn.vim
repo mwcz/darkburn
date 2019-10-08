@@ -116,7 +116,7 @@ hi SpecialComment  guifg=#82a282 gui=bold
 hi Special         guifg=#9fbfd6
 hi SpecialKey      guifg=#9ece9e
 " hi Statement       guifg=#6fb86f  gui=none
-hi Statement       guifg=#313633 gui=none
+hi Statement       guifg=#9ece9e gui=none
 hi StatusLine      guifg=#313633 guibg=#ccdc90
 hi StatusLineNC    guifg=#2e3330 guibg=#88b090
 hi StorageClass    guifg=#c3bf9f gui=bold
