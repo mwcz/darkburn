@@ -64,6 +64,10 @@
 "   - Visual alternate color is broken? Try GVim >= 7.0.66 if you have trouble
 "   - IME colouring (CursorIM)
 
+if ! exists("g:darkburn_unified_CursorColumn")
+    let g:zenburn_unified_CursorColumn = 0
+endif
+
 set background=dark
 hi clear          
 if exists("syntax_on")
@@ -75,7 +79,7 @@ hi Boolean         guifg=#dca3a3
 hi Character       guifg=#dca3a3 gui=bold
 hi Comment         guifg=#7f9f7f gui=italic
 hi Conditional     guifg=#f0dfaf gui=bold
-hi Constant        guifg=#dca3a3 gui=bold
+hi Constant        guifg=#ffcfaf gui=bold
 hi Cursor          guifg=#000d18 guibg=#8faf9f gui=bold
 hi Debug           guifg=#bca3a3 gui=bold
 hi Define          guifg=#ffcfaf gui=bold
@@ -115,7 +119,8 @@ hi Statement       guifg=#6fb86f  gui=none
 hi StatusLine      guifg=#313633 guibg=#ccdc90
 hi StatusLineNC    guifg=#2e3330 guibg=#88b090
 hi StorageClass    guifg=#c3bf9f gui=bold
-hi String          guifg=#b75151
+" hi String          guifg=#b75151
+hi String          guifg=#cc9393
 hi Structure       guifg=#efefaf gui=bold
 hi Tag             guifg=#e89393 gui=bold
 hi Title           guifg=#efefef gui=bold
@@ -132,6 +137,14 @@ hi SpellBad   guisp=#bc6c4c guifg=#dc8c6c
 hi SpellCap   guisp=#6c6c9c guifg=#8c8cbc
 hi SpellRare  guisp=#bc6c9c guifg=#bc8cbc
 hi SpellLocal guisp=#7cac7c guifg=#9ccc9c
+
+hi! link jsBrackets Delimiter
+hi! link jsFuncCall Function
+hi! link jsFuncParens Delimiter
+hi! link jsThis Keyword
+hi! link jsNoise Delimiter
+hi! link jsPrototype Keyword
+hi! link jsRegexpString SpecialChar
 
 " Entering Kurt zone
 if &t_Co > 255
@@ -251,7 +264,12 @@ if exists("g:darkburn_high_Contrast")
     hi TabLineFill     guifg=#cfcfaf guibg=#181818 gui=bold
     hi TabLineSel      guifg=#efefef guibg=#1c1c1b gui=bold
     hi TabLine         guifg=#b6bf98 guibg=#181818 gui=bold
-    hi CursorColumn    guifg=#dcdccc guibg=#2b2b2b
+    " hi CursorColumn    guifg=#dcdccc guibg=#2b2b2b
+    if exists("g:darkburn_unified_CursorColumn") && g:darkburn_unified_CursorColumn
+        hi CursorColumn  guibg=#121212             ctermbg=233 cterm=none
+    else
+        hi CursorColumn  guibg=#2b2b2b                     ctermbg=235 cterm=none
+    endif
 else
     " Original, lighter background
     hi Normal          guifg=#dcdccc guibg=#3f3f3f
@@ -265,7 +283,12 @@ else
     hi TabLineFill     guifg=#cfcfaf guibg=#353535 gui=bold
     hi TabLineSel      guifg=#efefef guibg=#3a3a39 gui=bold
     hi TabLine         guifg=#b6bf98 guibg=#353535 gui=bold
-    hi CursorColumn    guifg=#dcdccc guibg=#4f4f4f
+    " hi CursorColumn    guifg=#dcdccc guibg=#4f4f4f
+    if exists("g:darkburn_unified_CursorColumn") && g:darkburn_unified_CursorColumn
+        hi CursorColumn  guibg=#121212             ctermbg=233 cterm=none
+    else
+        hi CursorColumn  guibg=#2b2b2b                     ctermbg=235 cterm=none
+    endif
 endif
     
 
