@@ -77,7 +77,7 @@ let g:colors_name="darkburn"
 
 hi Boolean         guifg=#dca3a3
 hi Character       guifg=#dca3a3 gui=bold
-hi Comment         guifg=#7f8f7f gui=italic
+hi Comment         guifg=#7faf7f gui=italic
 hi Conditional     guifg=#f0dfaf gui=bold
 hi Constant        guifg=#ffcfaf gui=bold
 hi Cursor          guifg=#000d18 guibg=#8faf9f gui=bold
@@ -116,7 +116,7 @@ hi SpecialComment  guifg=#82a282 gui=bold
 hi Special         guifg=#9fbfd6
 hi SpecialKey      guifg=#9ece9e
 " hi Statement       guifg=#6fb86f  gui=none
-hi Statement       guifg=#9ece9e gui=none
+hi Statement       guifg=#f0dfaf gui=none
 hi StatusLine      guifg=#313633 guibg=#ccdc90
 hi StatusLineNC    guifg=#2e3330 guibg=#88b090
 hi StorageClass    guifg=#c3bf9f gui=bold
