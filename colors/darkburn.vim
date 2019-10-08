@@ -255,7 +255,7 @@ if exists("g:darkburn_high_Contrast")
     " use new darker background
     hi Normal          guifg=#ffffff guibg=#1f1f1f
     hi CursorLine      guibg=#121212
-    hi CursorLine      guibg=#121212 gui=bold
+    " hi CursorLine      guibg=#121212 gui=bold
     hi Pmenu           guibg=#242424 guifg=#ccccbc
     hi PMenuSel        guibg=#353a37 guifg=#ccdc90 gui=bold
     hi PmenuSbar       guibg=#2e3330 guifg=#000000
