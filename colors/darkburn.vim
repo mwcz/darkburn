@@ -77,7 +77,11 @@ let g:colors_name="darkburn"
 
 hi Boolean         guifg=#dca3a3
 hi Character       guifg=#dca3a3 gui=bold
-hi Comment         guifg=#7faf7f gui=italic
+if exists("g:darkburn_italic_Comments") && g:darkburn_italic_Comments
+    hi Comment         guifg=#7faf7f gui=italic
+else
+    hi Comment         guifg=#7faf7f
+endif
 hi Conditional     guifg=#f0dfaf gui=bold
 hi Constant        guifg=#ffcfaf gui=bold
 hi Cursor          guifg=#000d18 guibg=#8faf9f gui=bold
