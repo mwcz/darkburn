@@ -305,8 +305,10 @@ if exists("g:darkburn_alternate_Visual")
     hi VisualNOS       guifg=#000000 guibg=#71d3b4 gui=none
 else
     " use default visual
-    hi Visual          guifg=#71d3b4 guibg=#233323 gui=none
-    hi VisualNOS       guifg=#71d3b4 guibg=#233323 gui=none
+    " hi Visual          guifg=#71d3b4 guibg=#233323 gui=none
+    " hi VisualNOS       guifg=#71d3b4 guibg=#233323 gui=none
+    hi Visual          guifg=#dcdccc guibg=#434443 gui=none
+    hi VisualNOS       guifg=#dcdccc guibg=#434443 gui=none
 endif
 
 if exists("g:darkburn_alternate_Error")
